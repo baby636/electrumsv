@@ -1,4 +1,3 @@
-aiodns
 aiohttp>=3.6.2,<=3.7.3
 aiorpcX>=0.18.0,<0.19
 certifi
