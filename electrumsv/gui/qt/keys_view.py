@@ -36,7 +36,7 @@ from typing import Any, Dict, Iterable, List, Optional, Set, Tuple, Union
 import weakref
 import webbrowser
 
-from bitcoinx import Address, bip32_build_chain_string
+from bitcoinx import Address, bip32_build_chain_string, hash_to_hex_str
 
 from PyQt5.QtCore import (QAbstractItemModel, QModelIndex, QVariant, Qt, QSortFilterProxyModel,
     QTimer)
@@ -870,7 +870,7 @@ class KeyView(QTableView):
                 script_type = line.txo_script_type if line.txo_script_type is not None \
                     else ScriptType.NONE
                 menu.addAction(_('Details'),
-                    lambda: self._main_window.show_key(self._account, line, script_type))
+                    partial(self._main_window.show_key, self._account, line, script_type))
                 if column == LABEL_COLUMN:
                     column_title = self._headers[menu_column]
                     menu.addAction(_("Edit {}").format(column_title),
@@ -897,7 +897,8 @@ class KeyView(QTableView):
                         addr_URL = web.BE_URL(self._main_window.config, 'addr', script_template)
 
                     scripthash = sha256(script_template.to_script_bytes())
-                    script_URL = web.BE_URL(self._main_window.config, 'script', scripthash)
+                    scripthash_hex = hash_to_hex_str(scripthash)
+                    script_URL = web.BE_URL(self._main_window.config, 'script', scripthash_hex)
 
                 addr_action = explore_menu.addAction(_("By address"),
                     partial(webbrowser.open, addr_URL))
@@ -909,8 +910,8 @@ class KeyView(QTableView):
                     script_action.setEnabled(False)
 
                 for script_type, script in self._account.get_possible_scripts_for_key_data(line):
-                    scripthash = scripthash_bytes(script)
-                    script_URL = web.BE_URL(self._main_window.config, 'script', scripthash)
+                    scripthash_hex = hash_to_hex_str(scripthash_bytes(script))
+                    script_URL = web.BE_URL(self._main_window.config, 'script', scripthash_hex)
                     if script_URL:
                         explore_menu.addAction(
                             _("As {scripttype}").format(scripttype=script_type.name),
