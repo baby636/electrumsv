@@ -78,7 +78,7 @@ mnemonic==0.19 \
     # via
     #   keepkey
     #   trezor
-protobuf==3.15.1 \
+protobuf==3.18.3 \
     --hash=sha256:03f6ee325710eb164bd85741721fbd4326c399b0ecf49dddba9172df9149c124 \
     --hash=sha256:0644b70bc9d36329438de0da619e3337ab4eade784a9acc6ba8e5ed22f2e9e50 \
     --hash=sha256:0938b13c2a5ad0ce2b75c19dc0c2082f721a61b97d3f11d73ee4412dfb6e06eb \
