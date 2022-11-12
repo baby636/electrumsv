@@ -78,7 +78,7 @@ mnemonic==0.19 \
     # via
     #   keepkey
     #   trezor
-protobuf==3.15.1 \
+protobuf==3.18.3 \
     --hash=sha256:03f6ee325710eb164bd85741721fbd4326c399b0ecf49dddba9172df9149c124 \
     --hash=sha256:0644b70bc9d36329438de0da619e3337ab4eade784a9acc6ba8e5ed22f2e9e50 \
     --hash=sha256:0938b13c2a5ad0ce2b75c19dc0c2082f721a61b97d3f11d73ee4412dfb6e06eb \
@@ -121,7 +121,7 @@ typing-extensions==3.7.4.3 \
     --hash=sha256:99d4073b617d30288f569d3f13d2bd7548c3a7e4c8de87db09a9d29bb3a4a60c \
     --hash=sha256:dafc7639cde7f1b6e1acc0f457842a83e722ccca8eef5270af2d74792619a89f
     # via trezor
-urllib3==1.26.3 \
+urllib3==1.26.5 \
     --hash=sha256:1b465e494e3e0d8939b50680403e3aedaa2bc434b7d5af64dfd3c958d7f5ae80 \
     --hash=sha256:de3eedaad74a2683334e282005cd8d7f22f4d55fa690a2a1020a416cb0a47e73
     # via requests
