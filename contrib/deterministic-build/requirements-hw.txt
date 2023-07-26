@@ -7,7 +7,7 @@
 btchip-python==0.1.31 \
     --hash=sha256:4167f3c6ea832dd189d447d0d7a8c2a968027671ae6f43c680192f2b72c39b2c
     # via -r G:\electrumsv_official\contrib\requirements\requirements-hw.txt
-certifi==2020.12.5 \
+certifi==2023.7.22 \
     --hash=sha256:1a4995114262bffbc2413b159f2a1a480c969de6e6eb13ee966d470af86af59c \
     --hash=sha256:719a74fb9e33b9bd44cc7f3a8d94bc35e4049deebe19ba7d8e108280cfd59830
     # via requests
