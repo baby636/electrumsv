@@ -1,7 +1,7 @@
 aiohttp>=3.6.2,<=3.7.3
 aiorpcX>=0.18.0,<0.19
 certifi
-dnspython<2.0
+dnspython<2.6.0rc1
 ecdsa>=0.13.3
 jsonrpclib-pelix
 mypy-extensions
