@@ -6,7 +6,7 @@ ecdsa>=0.13.3
 jsonrpclib-pelix
 mypy-extensions
 pyaes>=0.1a1
-requests>=2.22.0,<=2.25.0
+requests>=2.32.0,<=2.25.0
 python-dateutil>=2.8.0
 qrcode
 yarl>=1.5.1
