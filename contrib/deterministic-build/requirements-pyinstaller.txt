@@ -33,3 +33,4 @@ setuptools==51.0.0 \
     # via
     #   -r G:\electrumsv_official\contrib\requirements\requirements-pyinstaller.txt
     #   pyinstaller
+zipp>=3.19.1 # not directly required, pinned by Snyk to avoid a vulnerability
