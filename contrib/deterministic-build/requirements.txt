@@ -4,7 +4,7 @@
 #
 #    pip-compile --allow-unsafe --generate-hashes --output-file='G:\electrumsv_official\contrib\deterministic-build\requirements.txt' 'G:\electrumsv_official\contrib\requirements\requirements.txt'
 #
-aiohttp==3.7.3 \
+aiohttp==3.10.2 \
     --hash=sha256:0b795072bb1bf87b8620120a6373a3c61bfcb8da7e5c2377f4bb23ff4f0b62c9 \
     --hash=sha256:0d438c8ca703b1b714e82ed5b7a4412c82577040dadff479c08405e2a715564f \
     --hash=sha256:16a3cb5df5c56f696234ea9e65e227d1ebe9c18aa774d36ff42f532139066a5f \
